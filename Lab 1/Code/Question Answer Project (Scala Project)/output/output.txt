@@ -1,0 +1,821 @@
+Sentence #1 (14 tokens):
+President Barack Obama
+Barack Obama is the 44th President of the United States.
+[Text=President CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=President NamedEntityTag=O] [Text=Barack CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Barack NamedEntityTag=PERSON] [Text=Obama CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text=Barack CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Barack NamedEntityTag=PERSON] [Text=Obama CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text=is CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O] [Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=44th CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=44th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=44.0] [Text=President CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=president NamedEntityTag=O] [Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=United CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=United NamedEntityTag=LOCATION] [Text=States CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNPS Lemma=States NamedEntityTag=LOCATION] [Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP (NNP President) (NNP Barack) (NNP Obama) (NNP Barack) (NNP Obama))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ 44th) (NN President))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. .)))
+
+root(ROOT-0, President-9)
+nn(Obama-5, President-1)
+nn(Obama-5, Barack-2)
+nn(Obama-5, Obama-3)
+nn(Obama-5, Barack-4)
+nsubj(President-9, Obama-5)
+cop(President-9, is-6)
+det(President-9, the-7)
+amod(President-9, 44th-8)
+det(States-13, the-11)
+nn(States-13, United-12)
+prep_of(President-9, States-13)
+
+Sentence #2 (47 tokens):
+His story is the American story -- values from the heartland, a middle-class upbringing in a strong family, hard work and education as the means of getting ahead, and the conviction that a life so blessed should be lived in service to others.
+[Text=His CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=story CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=story NamedEntityTag=O] [Text=is CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O] [Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=American CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=american NamedEntityTag=MISC] [Text=story CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=story NamedEntityTag=O] [Text=-- CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=: Lemma=-- NamedEntityTag=O] [Text=values CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=value NamedEntityTag=O] [Text=from CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=the CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=heartland CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=heartland NamedEntityTag=O] [Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=middle-class CharacterOffsetBegin=145 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=middle-class NamedEntityTag=O] [Text=upbringing CharacterOffsetBegin=158 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=upbringing NamedEntityTag=O] [Text=in CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=a CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=strong CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=JJ Lemma=strong NamedEntityTag=O] [Text=family CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=family NamedEntityTag=O] [Text=, CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=hard CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O] [Text=work CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=work NamedEntityTag=O] [Text=and CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=education CharacterOffsetBegin=203 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=education NamedEntityTag=O] [Text=as CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=as NamedEntityTag=O] [Text=the CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=means CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=NNS Lemma=means NamedEntityTag=O] [Text=of CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=getting CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=VBG Lemma=get NamedEntityTag=O] [Text=ahead CharacterOffsetBegin=237 CharacterOffsetEnd=242 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O] [Text=, CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=the CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=conviction CharacterOffsetBegin=252 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=conviction NamedEntityTag=O] [Text=that CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=that NamedEntityTag=O] [Text=a CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=life CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=life NamedEntityTag=O] [Text=so CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=so NamedEntityTag=O] [Text=blessed CharacterOffsetBegin=278 CharacterOffsetEnd=285 PartOfSpeech=VBD Lemma=bless NamedEntityTag=O] [Text=should CharacterOffsetBegin=286 CharacterOffsetEnd=292 PartOfSpeech=MD Lemma=should NamedEntityTag=O] [Text=be CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=VB Lemma=be NamedEntityTag=O] [Text=lived CharacterOffsetBegin=296 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=live NamedEntityTag=O] [Text=in CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=service CharacterOffsetBegin=305 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=service NamedEntityTag=O] [Text=to CharacterOffsetBegin=313 CharacterOffsetEnd=315 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=others CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=NNS Lemma=other NamedEntityTag=O] [Text=. CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN story))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ American) (NN story))
+          (PRN (: --)
+            (NP
+              (NP
+                (NP (NNS values))
+                (PP (IN from)
+                  (NP (DT the) (NN heartland))))
+              (, ,)
+              (NP
+                (NP (DT a) (NN middle-class) (NN upbringing))
+                (PP (IN in)
+                  (NP (DT a) (JJ strong) (NN family))))
+              (, ,)
+              (NP
+                (NP (JJ hard) (NN work)
+                  (CC and)
+                  (NN education))
+                (PP (IN as)
+                  (NP (DT the) (NNS means))))))
+          (PP (IN of)
+            (S
+              (VP (VBG getting)
+                (ADVP (RB ahead))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN conviction))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN life))
+            (ADVP (RB so))
+            (VP (VBD blessed)))))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN lived)
+            (PP (IN in)
+              (NP (NN service)))
+            (PP (TO to)
+              (NP (NNS others)))))))
+    (. .)))
+
+root(ROOT-0, story-6)
+poss(story-2, His-1)
+nsubj(story-6, story-2)
+cop(story-6, is-3)
+det(story-6, the-4)
+amod(story-6, American-5)
+dep(story-6, values-8)
+det(heartland-11, the-10)
+prep_from(values-8, heartland-11)
+det(upbringing-15, a-13)
+nn(upbringing-15, middle-class-14)
+appos(values-8, upbringing-15)
+det(family-19, a-17)
+amod(family-19, strong-18)
+prep_in(upbringing-15, family-19)
+amod(work-22, hard-21)
+appos(values-8, work-22)
+conj_and(work-22, education-24)
+det(means-27, the-26)
+prep_as(work-22, means-27)
+prepc_of(story-6, getting-29)
+advmod(getting-29, ahead-30)
+det(conviction-34, the-33)
+nsubjpass(lived-42, conviction-34)
+mark(blessed-39, that-35)
+det(life-37, a-36)
+nsubj(blessed-39, life-37)
+advmod(blessed-39, so-38)
+dep(conviction-34, blessed-39)
+aux(lived-42, should-40)
+auxpass(lived-42, be-41)
+conj_and(story-6, lived-42)
+prep_in(lived-42, service-44)
+prep_to(lived-42, others-46)
+
+Sentence #3 (12 tokens):
+Barack H. Obama is the 44th President of the United States.
+[Text=Barack CharacterOffsetBegin=326 CharacterOffsetEnd=332 PartOfSpeech=NNP Lemma=Barack NamedEntityTag=PERSON] [Text=H. CharacterOffsetBegin=333 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=H. NamedEntityTag=PERSON] [Text=Obama CharacterOffsetBegin=336 CharacterOffsetEnd=341 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text=is CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O] [Text=the CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=44th CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=JJ Lemma=44th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=44.0] [Text=President CharacterOffsetBegin=354 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=president NamedEntityTag=O] [Text=of CharacterOffsetBegin=364 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=United CharacterOffsetBegin=371 CharacterOffsetEnd=377 PartOfSpeech=NNP Lemma=United NamedEntityTag=LOCATION] [Text=States CharacterOffsetBegin=378 CharacterOffsetEnd=384 PartOfSpeech=NNPS Lemma=States NamedEntityTag=LOCATION] [Text=. CharacterOffsetBegin=384 CharacterOffsetEnd=385 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP (NNP Barack) (NNP H.) (NNP Obama))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ 44th) (NN President))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. .)))
+
+root(ROOT-0, President-7)
+nn(Obama-3, Barack-1)
+nn(Obama-3, H.-2)
+nsubj(President-7, Obama-3)
+cop(President-7, is-4)
+det(President-7, the-5)
+amod(President-7, 44th-6)
+det(States-11, the-9)
+nn(States-11, United-10)
+prep_of(President-7, States-11)
+
+Sentence #4 (46 tokens):
+His story is the American story � values from the heartland, a middle-class upbringing in a strong family, hard work and education as the means of getting ahead, and the conviction that a life so blessed should be lived in service to others.
+[Text=His CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=story CharacterOffsetBegin=393 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=story NamedEntityTag=O] [Text=is CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O] [Text=the CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=American CharacterOffsetBegin=406 CharacterOffsetEnd=414 PartOfSpeech=JJ Lemma=american NamedEntityTag=MISC] [Text=story CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=story NamedEntityTag=O] [Text=values CharacterOffsetBegin=423 CharacterOffsetEnd=429 PartOfSpeech=NNS Lemma=value NamedEntityTag=O] [Text=from CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=the CharacterOffsetBegin=435 CharacterOffsetEnd=438 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=heartland CharacterOffsetBegin=439 CharacterOffsetEnd=448 PartOfSpeech=NN Lemma=heartland NamedEntityTag=O] [Text=, CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=a CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=middle-class CharacterOffsetBegin=452 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=middle-class NamedEntityTag=O] [Text=upbringing CharacterOffsetBegin=465 CharacterOffsetEnd=475 PartOfSpeech=NN Lemma=upbringing NamedEntityTag=O] [Text=in CharacterOffsetBegin=476 CharacterOffsetEnd=478 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=a CharacterOffsetBegin=479 CharacterOffsetEnd=480 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=strong CharacterOffsetBegin=481 CharacterOffsetEnd=487 PartOfSpeech=JJ Lemma=strong NamedEntityTag=O] [Text=family CharacterOffsetBegin=488 CharacterOffsetEnd=494 PartOfSpeech=NN Lemma=family NamedEntityTag=O] [Text=, CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=hard CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O] [Text=work CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=NN Lemma=work NamedEntityTag=O] [Text=and CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=education CharacterOffsetBegin=510 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=education NamedEntityTag=O] [Text=as CharacterOffsetBegin=520 CharacterOffsetEnd=522 PartOfSpeech=IN Lemma=as NamedEntityTag=O] [Text=the CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=means CharacterOffsetBegin=527 CharacterOffsetEnd=532 PartOfSpeech=NNS Lemma=means NamedEntityTag=O] [Text=of CharacterOffsetBegin=533 CharacterOffsetEnd=535 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=getting CharacterOffsetBegin=536 CharacterOffsetEnd=543 PartOfSpeech=VBG Lemma=get NamedEntityTag=O] [Text=ahead CharacterOffsetBegin=544 CharacterOffsetEnd=549 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O] [Text=, CharacterOffsetBegin=549 CharacterOffsetEnd=550 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=the CharacterOffsetBegin=555 CharacterOffsetEnd=558 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=conviction CharacterOffsetBegin=559 CharacterOffsetEnd=569 PartOfSpeech=NN Lemma=conviction NamedEntityTag=O] [Text=that CharacterOffsetBegin=570 CharacterOffsetEnd=574 PartOfSpeech=IN Lemma=that NamedEntityTag=O] [Text=a CharacterOffsetBegin=575 CharacterOffsetEnd=576 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=life CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=NN Lemma=life NamedEntityTag=O] [Text=so CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=RB Lemma=so NamedEntityTag=O] [Text=blessed CharacterOffsetBegin=585 CharacterOffsetEnd=592 PartOfSpeech=VBD Lemma=bless NamedEntityTag=O] [Text=should CharacterOffsetBegin=593 CharacterOffsetEnd=599 PartOfSpeech=MD Lemma=should NamedEntityTag=O] [Text=be CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=VB Lemma=be NamedEntityTag=O] [Text=lived CharacterOffsetBegin=603 CharacterOffsetEnd=608 PartOfSpeech=VBN Lemma=live NamedEntityTag=O] [Text=in CharacterOffsetBegin=609 CharacterOffsetEnd=611 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=service CharacterOffsetBegin=612 CharacterOffsetEnd=619 PartOfSpeech=NN Lemma=service NamedEntityTag=O] [Text=to CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=others CharacterOffsetBegin=623 CharacterOffsetEnd=629 PartOfSpeech=NNS Lemma=other NamedEntityTag=O] [Text=. CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN story))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ American)
+            (NX
+              (NX
+                (NX (NN story) (NNS values))
+                (PP (IN from)
+                  (NP
+                    (NP (DT the) (NN heartland))
+                    (, ,)
+                    (NP
+                      (NP (DT a) (NN middle-class) (NN upbringing))
+                      (PP (IN in)
+                        (NP (DT a) (JJ strong) (NN family)))))))
+              (, ,)
+              (NX (JJ hard) (NN work))
+              (CC and)
+              (NX
+                (NP (NN education))
+                (PP (IN as)
+                  (NP (DT the) (NNS means))))))
+          (PP (IN of)
+            (S
+              (VP (VBG getting)
+                (ADVP (RB ahead))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN conviction))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN life))
+            (ADVP (RB so))
+            (VP (VBD blessed)))))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN lived)
+            (PP (IN in)
+              (NP (NN service)))
+            (PP (TO to)
+              (NP (NNS others)))))))
+    (. .)))
+
+root(ROOT-0, values-7)
+poss(story-2, His-1)
+nsubj(values-7, story-2)
+cop(values-7, is-3)
+det(values-7, the-4)
+amod(values-7, American-5)
+nn(values-7, story-6)
+det(heartland-10, the-9)
+prep_from(values-7, heartland-10)
+det(upbringing-14, a-12)
+nn(upbringing-14, middle-class-13)
+appos(heartland-10, upbringing-14)
+det(family-18, a-16)
+amod(family-18, strong-17)
+prep_in(upbringing-14, family-18)
+amod(work-21, hard-20)
+conj_and(values-7, work-21)
+conj_and(values-7, education-23)
+det(means-26, the-25)
+prep_as(education-23, means-26)
+prepc_of(values-7, getting-28)
+advmod(getting-28, ahead-29)
+det(conviction-33, the-32)
+nsubjpass(lived-41, conviction-33)
+mark(blessed-38, that-34)
+det(life-36, a-35)
+nsubj(blessed-38, life-36)
+advmod(blessed-38, so-37)
+dep(conviction-33, blessed-38)
+aux(lived-41, should-39)
+auxpass(lived-41, be-40)
+conj_and(values-7, lived-41)
+prep_in(lived-41, service-43)
+prep_to(lived-41, others-45)
+
+Sentence #5 (23 tokens):
+With a father from Kenya and a mother from Kansas, President Obama was born in Hawaii on August 4, 1961.
+[Text=With CharacterOffsetBegin=634 CharacterOffsetEnd=638 PartOfSpeech=IN Lemma=with NamedEntityTag=O] [Text=a CharacterOffsetBegin=639 CharacterOffsetEnd=640 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=father CharacterOffsetBegin=641 CharacterOffsetEnd=647 PartOfSpeech=NN Lemma=father NamedEntityTag=O] [Text=from CharacterOffsetBegin=648 CharacterOffsetEnd=652 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=Kenya CharacterOffsetBegin=653 CharacterOffsetEnd=658 PartOfSpeech=NNP Lemma=Kenya NamedEntityTag=LOCATION] [Text=and CharacterOffsetBegin=659 CharacterOffsetEnd=662 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=a CharacterOffsetBegin=663 CharacterOffsetEnd=664 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=mother CharacterOffsetBegin=665 CharacterOffsetEnd=671 PartOfSpeech=NN Lemma=mother NamedEntityTag=O] [Text=from CharacterOffsetBegin=672 CharacterOffsetEnd=676 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=Kansas CharacterOffsetBegin=677 CharacterOffsetEnd=683 PartOfSpeech=NNP Lemma=Kansas NamedEntityTag=LOCATION] [Text=, CharacterOffsetBegin=683 CharacterOffsetEnd=684 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=President CharacterOffsetBegin=685 CharacterOffsetEnd=694 PartOfSpeech=NNP Lemma=President NamedEntityTag=O] [Text=Obama CharacterOffsetBegin=695 CharacterOffsetEnd=700 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text=was CharacterOffsetBegin=701 CharacterOffsetEnd=704 PartOfSpeech=VBD Lemma=be NamedEntityTag=O] [Text=born CharacterOffsetBegin=705 CharacterOffsetEnd=709 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O] [Text=in CharacterOffsetBegin=710 CharacterOffsetEnd=712 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=Hawaii CharacterOffsetBegin=713 CharacterOffsetEnd=719 PartOfSpeech=NNP Lemma=Hawaii NamedEntityTag=LOCATION] [Text=on CharacterOffsetBegin=720 CharacterOffsetEnd=722 PartOfSpeech=IN Lemma=on NamedEntityTag=O] [Text=August CharacterOffsetBegin=723 CharacterOffsetEnd=729 PartOfSpeech=NNP Lemma=August NamedEntityTag=DATE NormalizedNamedEntityTag=1961-08-04 Timex=<TIMEX3 tid="t1" type="DATE" value="1961-08-04">August 4, 1961</TIMEX3>] [Text=4 CharacterOffsetBegin=730 CharacterOffsetEnd=731 PartOfSpeech=CD Lemma=4 NamedEntityTag=DATE NormalizedNamedEntityTag=1961-08-04 Timex=<TIMEX3 tid="t1" type="DATE" value="1961-08-04">August 4, 1961</TIMEX3>] [Text=, CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1961-08-04 Timex=<TIMEX3 tid="t1" type="DATE" value="1961-08-04">August 4, 1961</TIMEX3>] [Text=1961 CharacterOffsetBegin=733 CharacterOffsetEnd=737 PartOfSpeech=CD Lemma=1961 NamedEntityTag=DATE NormalizedNamedEntityTag=1961-08-04 Timex=<TIMEX3 tid="t1" type="DATE" value="1961-08-04">August 4, 1961</TIMEX3>] [Text=. CharacterOffsetBegin=737 CharacterOffsetEnd=738 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP
+          (NP (DT a) (NN father))
+          (PP (IN from)
+            (NP (NNP Kenya))))
+        (CC and)
+        (NP
+          (NP (DT a) (NN mother))
+          (PP (IN from)
+            (NP (NNP Kansas))))))
+    (, ,)
+    (NP (NNP President) (NNP Obama))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Hawaii)))
+        (PP (IN on)
+          (NP (NNP August) (CD 4) (, ,) (CD 1961)))))
+    (. .)))
+
+root(ROOT-0, born-15)
+det(father-3, a-2)
+prep_with(born-15, father-3)
+prep_from(father-3, Kenya-5)
+det(mother-8, a-7)
+conj_and(father-3, mother-8)
+prep_from(mother-8, Kansas-10)
+nn(Obama-13, President-12)
+nsubjpass(born-15, Obama-13)
+auxpass(born-15, was-14)
+prep_in(born-15, Hawaii-17)
+prep_on(born-15, August-19)
+num(August-19, 4-20)
+num(August-19, 1961-22)
+
+Sentence #6 (36 tokens):
+He was raised with help from his grandfather, who served in Patton's army, and his grandmother, who worked her way up from the secretarial pool to middle management at a bank.
+[Text=He CharacterOffsetBegin=739 CharacterOffsetEnd=741 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=was CharacterOffsetBegin=742 CharacterOffsetEnd=745 PartOfSpeech=VBD Lemma=be NamedEntityTag=O] [Text=raised CharacterOffsetBegin=746 CharacterOffsetEnd=752 PartOfSpeech=VBN Lemma=raise NamedEntityTag=O] [Text=with CharacterOffsetBegin=753 CharacterOffsetEnd=757 PartOfSpeech=IN Lemma=with NamedEntityTag=O] [Text=help CharacterOffsetBegin=758 CharacterOffsetEnd=762 PartOfSpeech=NN Lemma=help NamedEntityTag=O] [Text=from CharacterOffsetBegin=763 CharacterOffsetEnd=767 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=his CharacterOffsetBegin=768 CharacterOffsetEnd=771 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=grandfather CharacterOffsetBegin=772 CharacterOffsetEnd=783 PartOfSpeech=NN Lemma=grandfather NamedEntityTag=O] [Text=, CharacterOffsetBegin=783 CharacterOffsetEnd=784 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=who CharacterOffsetBegin=785 CharacterOffsetEnd=788 PartOfSpeech=WP Lemma=who NamedEntityTag=O] [Text=served CharacterOffsetBegin=789 CharacterOffsetEnd=795 PartOfSpeech=VBD Lemma=serve NamedEntityTag=O] [Text=in CharacterOffsetBegin=796 CharacterOffsetEnd=798 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=Patton CharacterOffsetBegin=799 CharacterOffsetEnd=805 PartOfSpeech=NNP Lemma=Patton NamedEntityTag=PERSON] [Text='s CharacterOffsetBegin=805 CharacterOffsetEnd=807 PartOfSpeech=POS Lemma='s NamedEntityTag=O] [Text=army CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=NN Lemma=army NamedEntityTag=O] [Text=, CharacterOffsetBegin=812 CharacterOffsetEnd=813 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=814 CharacterOffsetEnd=817 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=his CharacterOffsetBegin=818 CharacterOffsetEnd=821 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=grandmother CharacterOffsetBegin=822 CharacterOffsetEnd=833 PartOfSpeech=NN Lemma=grandmother NamedEntityTag=O] [Text=, CharacterOffsetBegin=833 CharacterOffsetEnd=834 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=who CharacterOffsetBegin=835 CharacterOffsetEnd=838 PartOfSpeech=WP Lemma=who NamedEntityTag=O] [Text=worked CharacterOffsetBegin=839 CharacterOffsetEnd=845 PartOfSpeech=VBD Lemma=work NamedEntityTag=O] [Text=her CharacterOffsetBegin=846 CharacterOffsetEnd=849 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O] [Text=way CharacterOffsetBegin=850 CharacterOffsetEnd=853 PartOfSpeech=NN Lemma=way NamedEntityTag=O] [Text=up CharacterOffsetBegin=854 CharacterOffsetEnd=856 PartOfSpeech=IN Lemma=up NamedEntityTag=O] [Text=from CharacterOffsetBegin=857 CharacterOffsetEnd=861 PartOfSpeech=IN Lemma=from NamedEntityTag=O] [Text=the CharacterOffsetBegin=862 CharacterOffsetEnd=865 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=secretarial CharacterOffsetBegin=866 CharacterOffsetEnd=877 PartOfSpeech=JJ Lemma=secretarial NamedEntityTag=O] [Text=pool CharacterOffsetBegin=878 CharacterOffsetEnd=882 PartOfSpeech=NN Lemma=pool NamedEntityTag=O] [Text=to CharacterOffsetBegin=883 CharacterOffsetEnd=885 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=middle CharacterOffsetBegin=886 CharacterOffsetEnd=892 PartOfSpeech=JJ Lemma=middle NamedEntityTag=O] [Text=management CharacterOffsetBegin=893 CharacterOffsetEnd=903 PartOfSpeech=NN Lemma=management NamedEntityTag=O] [Text=at CharacterOffsetBegin=904 CharacterOffsetEnd=906 PartOfSpeech=IN Lemma=at NamedEntityTag=O] [Text=a CharacterOffsetBegin=907 CharacterOffsetEnd=908 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=bank CharacterOffsetBegin=909 CharacterOffsetEnd=913 PartOfSpeech=NN Lemma=bank NamedEntityTag=O] [Text=. CharacterOffsetBegin=913 CharacterOffsetEnd=914 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN raised)
+        (PP (IN with)
+          (NP (NN help)))
+        (PP (IN from)
+          (NP
+            (NP
+              (NP (PRP$ his) (NN grandfather))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD served)
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP Patton) (POS 's))
+                        (NN army)))))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (PRP$ his) (NN grandmother))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD worked)
+                    (NP (PRP$ her) (NN way))
+                    (ADVP (IN up)
+                      (PP (IN from)
+                        (NP (DT the) (JJ secretarial) (NN pool))))
+                    (PP (TO to)
+                      (NP
+                        (NP (JJ middle) (NN management))
+                        (PP (IN at)
+                          (NP (DT a) (NN bank)))))))))))))
+    (. .)))
+
+root(ROOT-0, raised-3)
+nsubjpass(raised-3, He-1)
+auxpass(raised-3, was-2)
+prep_with(raised-3, help-5)
+poss(grandfather-8, his-7)
+prep_from(raised-3, grandfather-8)
+nsubj(served-11, who-10)
+rcmod(grandfather-8, served-11)
+poss(army-15, Patton-13)
+prep_in(served-11, army-15)
+poss(grandmother-19, his-18)
+conj_and(grandfather-8, grandmother-19)
+nsubj(worked-22, who-21)
+rcmod(grandmother-19, worked-22)
+poss(way-24, her-23)
+dobj(worked-22, way-24)
+advmod(worked-22, up-25)
+det(pool-29, the-27)
+amod(pool-29, secretarial-28)
+prep_from(up-25, pool-29)
+amod(management-32, middle-31)
+prep_to(worked-22, management-32)
+det(bank-35, a-34)
+prep_at(management-32, bank-35)
+
+Sentence #7 (42 tokens):
+After working his way through college with the help of scholarships and student loans, President Obama moved to Chicago, where he worked with a group of churches to help rebuild communities devastated by the closure of local steel plants.
+[Text=After CharacterOffsetBegin=918 CharacterOffsetEnd=923 PartOfSpeech=IN Lemma=after NamedEntityTag=O] [Text=working CharacterOffsetBegin=924 CharacterOffsetEnd=931 PartOfSpeech=VBG Lemma=work NamedEntityTag=O] [Text=his CharacterOffsetBegin=932 CharacterOffsetEnd=935 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=way CharacterOffsetBegin=936 CharacterOffsetEnd=939 PartOfSpeech=NN Lemma=way NamedEntityTag=O] [Text=through CharacterOffsetBegin=940 CharacterOffsetEnd=947 PartOfSpeech=IN Lemma=through NamedEntityTag=O] [Text=college CharacterOffsetBegin=948 CharacterOffsetEnd=955 PartOfSpeech=NN Lemma=college NamedEntityTag=O] [Text=with CharacterOffsetBegin=956 CharacterOffsetEnd=960 PartOfSpeech=IN Lemma=with NamedEntityTag=O] [Text=the CharacterOffsetBegin=961 CharacterOffsetEnd=964 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=help CharacterOffsetBegin=965 CharacterOffsetEnd=969 PartOfSpeech=NN Lemma=help NamedEntityTag=O] [Text=of CharacterOffsetBegin=970 CharacterOffsetEnd=972 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=scholarships CharacterOffsetBegin=973 CharacterOffsetEnd=985 PartOfSpeech=NNS Lemma=scholarship NamedEntityTag=O] [Text=and CharacterOffsetBegin=986 CharacterOffsetEnd=989 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=student CharacterOffsetBegin=990 CharacterOffsetEnd=997 PartOfSpeech=NN Lemma=student NamedEntityTag=O] [Text=loans CharacterOffsetBegin=998 CharacterOffsetEnd=1003 PartOfSpeech=NNS Lemma=loan NamedEntityTag=O] [Text=, CharacterOffsetBegin=1003 CharacterOffsetEnd=1004 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=President CharacterOffsetBegin=1005 CharacterOffsetEnd=1014 PartOfSpeech=NNP Lemma=President NamedEntityTag=O] [Text=Obama CharacterOffsetBegin=1015 CharacterOffsetEnd=1020 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text=moved CharacterOffsetBegin=1021 CharacterOffsetEnd=1026 PartOfSpeech=VBD Lemma=move NamedEntityTag=O] [Text=to CharacterOffsetBegin=1027 CharacterOffsetEnd=1029 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=Chicago CharacterOffsetBegin=1030 CharacterOffsetEnd=1037 PartOfSpeech=NNP Lemma=Chicago NamedEntityTag=LOCATION] [Text=, CharacterOffsetBegin=1037 CharacterOffsetEnd=1038 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=where CharacterOffsetBegin=1039 CharacterOffsetEnd=1044 PartOfSpeech=WRB Lemma=where NamedEntityTag=O] [Text=he CharacterOffsetBegin=1045 CharacterOffsetEnd=1047 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=worked CharacterOffsetBegin=1048 CharacterOffsetEnd=1054 PartOfSpeech=VBD Lemma=work NamedEntityTag=O] [Text=with CharacterOffsetBegin=1055 CharacterOffsetEnd=1059 PartOfSpeech=IN Lemma=with NamedEntityTag=O] [Text=a CharacterOffsetBegin=1060 CharacterOffsetEnd=1061 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=group CharacterOffsetBegin=1062 CharacterOffsetEnd=1067 PartOfSpeech=NN Lemma=group NamedEntityTag=O] [Text=of CharacterOffsetBegin=1068 CharacterOffsetEnd=1070 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=churches CharacterOffsetBegin=1071 CharacterOffsetEnd=1079 PartOfSpeech=NNS Lemma=church NamedEntityTag=O] [Text=to CharacterOffsetBegin=1080 CharacterOffsetEnd=1082 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=help CharacterOffsetBegin=1083 CharacterOffsetEnd=1087 PartOfSpeech=VB Lemma=help NamedEntityTag=O] [Text=rebuild CharacterOffsetBegin=1088 CharacterOffsetEnd=1095 PartOfSpeech=VB Lemma=rebuild NamedEntityTag=O] [Text=communities CharacterOffsetBegin=1096 CharacterOffsetEnd=1107 PartOfSpeech=NNS Lemma=community NamedEntityTag=O] [Text=devastated CharacterOffsetBegin=1108 CharacterOffsetEnd=1118 PartOfSpeech=VBN Lemma=devastate NamedEntityTag=O] [Text=by CharacterOffsetBegin=1119 CharacterOffsetEnd=1121 PartOfSpeech=IN Lemma=by NamedEntityTag=O] [Text=the CharacterOffsetBegin=1122 CharacterOffsetEnd=1125 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=closure CharacterOffsetBegin=1126 CharacterOffsetEnd=1133 PartOfSpeech=NN Lemma=closure NamedEntityTag=O] [Text=of CharacterOffsetBegin=1134 CharacterOffsetEnd=1136 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=local CharacterOffsetBegin=1137 CharacterOffsetEnd=1142 PartOfSpeech=JJ Lemma=local NamedEntityTag=O] [Text=steel CharacterOffsetBegin=1143 CharacterOffsetEnd=1148 PartOfSpeech=NN Lemma=steel NamedEntityTag=O] [Text=plants CharacterOffsetBegin=1149 CharacterOffsetEnd=1155 PartOfSpeech=NNS Lemma=plant NamedEntityTag=O] [Text=. CharacterOffsetBegin=1155 CharacterOffsetEnd=1156 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG working)
+          (NP (PRP$ his) (NN way))
+          (PP (IN through)
+            (NP (NN college)))
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN help))
+              (PP (IN of)
+                (NP
+                  (NP (NNS scholarships))
+                  (CC and)
+                  (NP (NN student) (NNS loans)))))))))
+    (, ,)
+    (NP (NNP President) (NNP Obama))
+    (VP (VBD moved)
+      (PP (TO to)
+        (NP (NNP Chicago)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD worked)
+            (PP (IN with)
+              (NP
+                (NP (DT a) (NN group))
+                (PP (IN of)
+                  (NP (NNS churches)))))
+            (S
+              (VP (TO to)
+                (VP (VB help)
+                  (VP (VB rebuild)
+                    (NP
+                      (NP (NNS communities))
+                      (VP (VBN devastated)
+                        (PP (IN by)
+                          (NP
+                            (NP (DT the) (NN closure))
+                            (PP (IN of)
+                              (NP (JJ local) (NN steel) (NNS plants)))))))))))))))
+    (. .)))
+
+root(ROOT-0, moved-18)
+prepc_after(moved-18, working-2)
+poss(way-4, his-3)
+dobj(working-2, way-4)
+prep_through(working-2, college-6)
+det(help-9, the-8)
+prep_with(working-2, help-9)
+prep_of(help-9, scholarships-11)
+nn(loans-14, student-13)
+conj_and(scholarships-11, loans-14)
+nn(Obama-17, President-16)
+nsubj(moved-18, Obama-17)
+prep_to(moved-18, Chicago-20)
+advmod(worked-24, where-22)
+nsubj(worked-24, he-23)
+advcl(moved-18, worked-24)
+det(group-27, a-26)
+prep_with(worked-24, group-27)
+prep_of(group-27, churches-29)
+aux(help-31, to-30)
+xcomp(worked-24, help-31)
+xcomp(help-31, rebuild-32)
+dobj(rebuild-32, communities-33)
+partmod(communities-33, devastated-34)
+det(closure-37, the-36)
+agent(devastated-34, closure-37)
+amod(plants-41, local-39)
+nn(plants-41, steel-40)
+prep_of(closure-37, plants-41)
+
+Sentence #8 (21 tokens):
+He went on to attend law school, where he became the first African-American president of the Harvard Law Review.
+[Text=He CharacterOffsetBegin=1160 CharacterOffsetEnd=1162 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=went CharacterOffsetBegin=1163 CharacterOffsetEnd=1167 PartOfSpeech=VBD Lemma=go NamedEntityTag=O] [Text=on CharacterOffsetBegin=1168 CharacterOffsetEnd=1170 PartOfSpeech=IN Lemma=on NamedEntityTag=O] [Text=to CharacterOffsetBegin=1171 CharacterOffsetEnd=1173 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=attend CharacterOffsetBegin=1174 CharacterOffsetEnd=1180 PartOfSpeech=VB Lemma=attend NamedEntityTag=O] [Text=law CharacterOffsetBegin=1181 CharacterOffsetEnd=1184 PartOfSpeech=NN Lemma=law NamedEntityTag=O] [Text=school CharacterOffsetBegin=1185 CharacterOffsetEnd=1191 PartOfSpeech=NN Lemma=school NamedEntityTag=O] [Text=, CharacterOffsetBegin=1191 CharacterOffsetEnd=1192 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=where CharacterOffsetBegin=1193 CharacterOffsetEnd=1198 PartOfSpeech=WRB Lemma=where NamedEntityTag=O] [Text=he CharacterOffsetBegin=1199 CharacterOffsetEnd=1201 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=became CharacterOffsetBegin=1202 CharacterOffsetEnd=1208 PartOfSpeech=VBD Lemma=become NamedEntityTag=O] [Text=the CharacterOffsetBegin=1209 CharacterOffsetEnd=1212 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=first CharacterOffsetBegin=1213 CharacterOffsetEnd=1218 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0] [Text=African-American CharacterOffsetBegin=1219 CharacterOffsetEnd=1235 PartOfSpeech=JJ Lemma=african-american NamedEntityTag=MISC] [Text=president CharacterOffsetBegin=1236 CharacterOffsetEnd=1245 PartOfSpeech=NN Lemma=president NamedEntityTag=O] [Text=of CharacterOffsetBegin=1246 CharacterOffsetEnd=1248 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=the CharacterOffsetBegin=1249 CharacterOffsetEnd=1252 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=Harvard CharacterOffsetBegin=1253 CharacterOffsetEnd=1260 PartOfSpeech=NNP Lemma=Harvard NamedEntityTag=ORGANIZATION] [Text=Law CharacterOffsetBegin=1261 CharacterOffsetEnd=1264 PartOfSpeech=NNP Lemma=Law NamedEntityTag=ORGANIZATION] [Text=Review CharacterOffsetBegin=1265 CharacterOffsetEnd=1271 PartOfSpeech=NNP Lemma=Review NamedEntityTag=ORGANIZATION] [Text=. CharacterOffsetBegin=1271 CharacterOffsetEnd=1272 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD went)
+      (PRT (IN on))
+      (S
+        (VP (TO to)
+          (VP (VB attend)
+            (NP (NN law) (NN school)))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD became)
+            (NP
+              (NP (DT the) (JJ first) (JJ African-American) (NN president))
+              (PP (IN of)
+                (NP (DT the) (NNP Harvard) (NNP Law) (NNP Review))))))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, He-1)
+prt(went-2, on-3)
+aux(attend-5, to-4)
+xcomp(went-2, attend-5)
+nn(school-7, law-6)
+dobj(attend-5, school-7)
+advmod(president-15, where-9)
+nsubj(president-15, he-10)
+cop(president-15, became-11)
+det(president-15, the-12)
+amod(president-15, first-13)
+amod(president-15, African-American-14)
+advcl(went-2, president-15)
+det(Review-20, the-17)
+nn(Review-20, Harvard-18)
+nn(Review-20, Law-19)
+prep_of(president-15, Review-20)
+
+Sentence #9 (31 tokens):
+Upon graduation, he returned to Chicago to help lead a voter registration drive, teach constitutional law at the University of Chicago, and remain active in his community.
+[Text=Upon CharacterOffsetBegin=1273 CharacterOffsetEnd=1277 PartOfSpeech=IN Lemma=upon NamedEntityTag=O] [Text=graduation CharacterOffsetBegin=1278 CharacterOffsetEnd=1288 PartOfSpeech=NN Lemma=graduation NamedEntityTag=O] [Text=, CharacterOffsetBegin=1288 CharacterOffsetEnd=1289 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=he CharacterOffsetBegin=1290 CharacterOffsetEnd=1292 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=returned CharacterOffsetBegin=1293 CharacterOffsetEnd=1301 PartOfSpeech=VBD Lemma=return NamedEntityTag=O] [Text=to CharacterOffsetBegin=1302 CharacterOffsetEnd=1304 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=Chicago CharacterOffsetBegin=1305 CharacterOffsetEnd=1312 PartOfSpeech=NNP Lemma=Chicago NamedEntityTag=LOCATION] [Text=to CharacterOffsetBegin=1313 CharacterOffsetEnd=1315 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=help CharacterOffsetBegin=1316 CharacterOffsetEnd=1320 PartOfSpeech=VB Lemma=help NamedEntityTag=O] [Text=lead CharacterOffsetBegin=1321 CharacterOffsetEnd=1325 PartOfSpeech=VB Lemma=lead NamedEntityTag=O] [Text=a CharacterOffsetBegin=1326 CharacterOffsetEnd=1327 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=voter CharacterOffsetBegin=1328 CharacterOffsetEnd=1333 PartOfSpeech=NN Lemma=voter NamedEntityTag=O] [Text=registration CharacterOffsetBegin=1334 CharacterOffsetEnd=1346 PartOfSpeech=NN Lemma=registration NamedEntityTag=O] [Text=drive CharacterOffsetBegin=1347 CharacterOffsetEnd=1352 PartOfSpeech=NN Lemma=drive NamedEntityTag=O] [Text=, CharacterOffsetBegin=1352 CharacterOffsetEnd=1353 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=teach CharacterOffsetBegin=1354 CharacterOffsetEnd=1359 PartOfSpeech=VB Lemma=teach NamedEntityTag=O] [Text=constitutional CharacterOffsetBegin=1360 CharacterOffsetEnd=1374 PartOfSpeech=JJ Lemma=constitutional NamedEntityTag=O] [Text=law CharacterOffsetBegin=1375 CharacterOffsetEnd=1378 PartOfSpeech=NN Lemma=law NamedEntityTag=O] [Text=at CharacterOffsetBegin=1379 CharacterOffsetEnd=1381 PartOfSpeech=IN Lemma=at NamedEntityTag=O] [Text=the CharacterOffsetBegin=1382 CharacterOffsetEnd=1385 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=University CharacterOffsetBegin=1386 CharacterOffsetEnd=1396 PartOfSpeech=NNP Lemma=University NamedEntityTag=ORGANIZATION] [Text=of CharacterOffsetBegin=1397 CharacterOffsetEnd=1399 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION] [Text=Chicago CharacterOffsetBegin=1400 CharacterOffsetEnd=1407 PartOfSpeech=NNP Lemma=Chicago NamedEntityTag=ORGANIZATION] [Text=, CharacterOffsetBegin=1407 CharacterOffsetEnd=1408 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=1409 CharacterOffsetEnd=1412 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=remain CharacterOffsetBegin=1413 CharacterOffsetEnd=1419 PartOfSpeech=VBP Lemma=remain NamedEntityTag=O] [Text=active CharacterOffsetBegin=1420 CharacterOffsetEnd=1426 PartOfSpeech=JJ Lemma=active NamedEntityTag=O] [Text=in CharacterOffsetBegin=1427 CharacterOffsetEnd=1429 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=his CharacterOffsetBegin=1430 CharacterOffsetEnd=1433 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=community CharacterOffsetBegin=1434 CharacterOffsetEnd=1443 PartOfSpeech=NN Lemma=community NamedEntityTag=O] [Text=. CharacterOffsetBegin=1443 CharacterOffsetEnd=1444 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (PP (IN Upon)
+      (NP (NN graduation)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD returned)
+      (PP (TO to)
+        (NP (NNP Chicago)))
+      (S
+        (VP (TO to)
+          (VP (VB help)
+            (S
+              (VP
+                (VP (VB lead)
+                  (NP (DT a) (NN voter) (NN registration) (NN drive)))
+                (, ,)
+                (VP (VB teach)
+                  (NP (JJ constitutional) (NN law))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (NNP University))
+                      (PP (IN of)
+                        (NP (NNP Chicago))))))
+                (, ,)
+                (CC and)
+                (VP (VBP remain)
+                  (ADJP (JJ active)
+                    (PP (IN in)
+                      (NP (PRP$ his) (NN community)))))))))))
+    (. .)))
+
+root(ROOT-0, returned-5)
+prep_upon(returned-5, graduation-2)
+nsubj(returned-5, he-4)
+prep_to(returned-5, Chicago-7)
+aux(help-9, to-8)
+xcomp(returned-5, help-9)
+ccomp(help-9, lead-10)
+det(drive-14, a-11)
+nn(drive-14, voter-12)
+nn(drive-14, registration-13)
+dobj(lead-10, drive-14)
+conj_and(lead-10, teach-16)
+amod(law-18, constitutional-17)
+dobj(teach-16, law-18)
+det(University-21, the-20)
+prep_at(teach-16, University-21)
+prep_of(University-21, Chicago-23)
+cop(active-27, remain-26)
+conj_and(lead-10, active-27)
+poss(community-30, his-29)
+prep_in(active-27, community-30)
+
+Sentence #10 (25 tokens):
+President Obama's years of public service are based around his unwavering belief in the ability to unite people around a politics of purpose.
+[Text=President CharacterOffsetBegin=1448 CharacterOffsetEnd=1457 PartOfSpeech=NNP Lemma=President NamedEntityTag=O] [Text=Obama CharacterOffsetBegin=1458 CharacterOffsetEnd=1463 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON] [Text='s CharacterOffsetBegin=1463 CharacterOffsetEnd=1465 PartOfSpeech=POS Lemma='s NamedEntityTag=O] [Text=years CharacterOffsetBegin=1466 CharacterOffsetEnd=1471 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t2" type="DURATION" value="PXY">years</TIMEX3>] [Text=of CharacterOffsetBegin=1472 CharacterOffsetEnd=1474 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=public CharacterOffsetBegin=1475 CharacterOffsetEnd=1481 PartOfSpeech=JJ Lemma=public NamedEntityTag=O] [Text=service CharacterOffsetBegin=1482 CharacterOffsetEnd=1489 PartOfSpeech=NN Lemma=service NamedEntityTag=O] [Text=are CharacterOffsetBegin=1490 CharacterOffsetEnd=1493 PartOfSpeech=VBP Lemma=be NamedEntityTag=O] [Text=based CharacterOffsetBegin=1494 CharacterOffsetEnd=1499 PartOfSpeech=VBN Lemma=base NamedEntityTag=O] [Text=around CharacterOffsetBegin=1500 CharacterOffsetEnd=1506 PartOfSpeech=IN Lemma=around NamedEntityTag=O] [Text=his CharacterOffsetBegin=1507 CharacterOffsetEnd=1510 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=unwavering CharacterOffsetBegin=1511 CharacterOffsetEnd=1521 PartOfSpeech=JJ Lemma=unwavering NamedEntityTag=O] [Text=belief CharacterOffsetBegin=1522 CharacterOffsetEnd=1528 PartOfSpeech=NN Lemma=belief NamedEntityTag=O] [Text=in CharacterOffsetBegin=1529 CharacterOffsetEnd=1531 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=the CharacterOffsetBegin=1532 CharacterOffsetEnd=1535 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=ability CharacterOffsetBegin=1536 CharacterOffsetEnd=1543 PartOfSpeech=NN Lemma=ability NamedEntityTag=O] [Text=to CharacterOffsetBegin=1544 CharacterOffsetEnd=1546 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=unite CharacterOffsetBegin=1547 CharacterOffsetEnd=1552 PartOfSpeech=VB Lemma=unite NamedEntityTag=O] [Text=people CharacterOffsetBegin=1553 CharacterOffsetEnd=1559 PartOfSpeech=NNS Lemma=people NamedEntityTag=O] [Text=around CharacterOffsetBegin=1560 CharacterOffsetEnd=1566 PartOfSpeech=IN Lemma=around NamedEntityTag=O] [Text=a CharacterOffsetBegin=1567 CharacterOffsetEnd=1568 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=politics CharacterOffsetBegin=1569 CharacterOffsetEnd=1577 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O] [Text=of CharacterOffsetBegin=1578 CharacterOffsetEnd=1580 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=purpose CharacterOffsetBegin=1581 CharacterOffsetEnd=1588 PartOfSpeech=NN Lemma=purpose NamedEntityTag=O] [Text=. CharacterOffsetBegin=1588 CharacterOffsetEnd=1589 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP President) (NNP Obama) (POS 's))
+        (NNS years))
+      (PP (IN of)
+        (NP (JJ public) (NN service))))
+    (VP (VBP are)
+      (VP (VBN based)
+        (PP (IN around)
+          (NP
+            (NP (PRP$ his) (JJ unwavering) (NN belief))
+            (PP (IN in)
+              (NP (DT the) (NN ability)))))
+        (S
+          (VP (TO to)
+            (VP (VB unite)
+              (NP (NNS people))
+              (PP (IN around)
+                (NP
+                  (NP (DT a) (NNS politics))
+                  (PP (IN of)
+                    (NP (NN purpose))))))))))
+    (. .)))
+
+root(ROOT-0, based-9)
+nn(Obama-2, President-1)
+poss(years-4, Obama-2)
+nsubjpass(based-9, years-4)
+amod(service-7, public-6)
+prep_of(years-4, service-7)
+auxpass(based-9, are-8)
+poss(belief-13, his-11)
+amod(belief-13, unwavering-12)
+prep_around(based-9, belief-13)
+det(ability-16, the-15)
+prep_in(belief-13, ability-16)
+aux(unite-18, to-17)
+xcomp(based-9, unite-18)
+dobj(unite-18, people-19)
+det(politics-22, a-21)
+prep_around(unite-18, politics-22)
+prep_of(politics-22, purpose-24)
+
+Sentence #11 (33 tokens):
+In the Illinois State Senate, he passed the first major ethics reform in 25 years, cut taxes for working families, and expanded health care for children and their parents.
+[Text=In CharacterOffsetBegin=1590 CharacterOffsetEnd=1592 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=the CharacterOffsetBegin=1593 CharacterOffsetEnd=1596 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=Illinois CharacterOffsetBegin=1597 CharacterOffsetEnd=1605 PartOfSpeech=NNP Lemma=Illinois NamedEntityTag=ORGANIZATION] [Text=State CharacterOffsetBegin=1606 CharacterOffsetEnd=1611 PartOfSpeech=NNP Lemma=State NamedEntityTag=ORGANIZATION] [Text=Senate CharacterOffsetBegin=1612 CharacterOffsetEnd=1618 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION] [Text=, CharacterOffsetBegin=1618 CharacterOffsetEnd=1619 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=he CharacterOffsetBegin=1620 CharacterOffsetEnd=1622 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=passed CharacterOffsetBegin=1623 CharacterOffsetEnd=1629 PartOfSpeech=VBD Lemma=pass NamedEntityTag=O] [Text=the CharacterOffsetBegin=1630 CharacterOffsetEnd=1633 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=first CharacterOffsetBegin=1634 CharacterOffsetEnd=1639 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0] [Text=major CharacterOffsetBegin=1640 CharacterOffsetEnd=1645 PartOfSpeech=JJ Lemma=major NamedEntityTag=O] [Text=ethics CharacterOffsetBegin=1646 CharacterOffsetEnd=1652 PartOfSpeech=NNS Lemma=ethic NamedEntityTag=O] [Text=reform CharacterOffsetBegin=1653 CharacterOffsetEnd=1659 PartOfSpeech=NN Lemma=reform NamedEntityTag=O] [Text=in CharacterOffsetBegin=1660 CharacterOffsetEnd=1662 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=25 CharacterOffsetBegin=1663 CharacterOffsetEnd=1665 PartOfSpeech=CD Lemma=25 NamedEntityTag=DURATION NormalizedNamedEntityTag=P25Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P25Y">25 years</TIMEX3>] [Text=years CharacterOffsetBegin=1666 CharacterOffsetEnd=1671 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P25Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P25Y">25 years</TIMEX3>] [Text=, CharacterOffsetBegin=1671 CharacterOffsetEnd=1672 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=cut CharacterOffsetBegin=1673 CharacterOffsetEnd=1676 PartOfSpeech=NN Lemma=cut NamedEntityTag=O] [Text=taxes CharacterOffsetBegin=1677 CharacterOffsetEnd=1682 PartOfSpeech=NNS Lemma=tax NamedEntityTag=O] [Text=for CharacterOffsetBegin=1683 CharacterOffsetEnd=1686 PartOfSpeech=IN Lemma=for NamedEntityTag=O] [Text=working CharacterOffsetBegin=1687 CharacterOffsetEnd=1694 PartOfSpeech=VBG Lemma=work NamedEntityTag=O] [Text=families CharacterOffsetBegin=1695 CharacterOffsetEnd=1703 PartOfSpeech=NNS Lemma=family NamedEntityTag=O] [Text=, CharacterOffsetBegin=1703 CharacterOffsetEnd=1704 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=1705 CharacterOffsetEnd=1708 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=expanded CharacterOffsetBegin=1709 CharacterOffsetEnd=1717 PartOfSpeech=VBD Lemma=expand NamedEntityTag=O] [Text=health CharacterOffsetBegin=1718 CharacterOffsetEnd=1724 PartOfSpeech=NN Lemma=health NamedEntityTag=O] [Text=care CharacterOffsetBegin=1725 CharacterOffsetEnd=1729 PartOfSpeech=NN Lemma=care NamedEntityTag=O] [Text=for CharacterOffsetBegin=1730 CharacterOffsetEnd=1733 PartOfSpeech=IN Lemma=for NamedEntityTag=O] [Text=children CharacterOffsetBegin=1734 CharacterOffsetEnd=1742 PartOfSpeech=NNS Lemma=child NamedEntityTag=O] [Text=and CharacterOffsetBegin=1743 CharacterOffsetEnd=1746 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=their CharacterOffsetBegin=1747 CharacterOffsetEnd=1752 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O] [Text=parents CharacterOffsetBegin=1753 CharacterOffsetEnd=1760 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O] [Text=. CharacterOffsetBegin=1760 CharacterOffsetEnd=1761 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP Illinois) (NNP State) (NNP Senate)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD passed)
+        (NP
+          (NP (DT the) (JJ first) (JJ major) (NNS ethics) (NN reform))
+          (PP (IN in)
+            (NP
+              (NP (CD 25) (NNS years))
+              (, ,)
+              (NP
+                (NP (NN cut) (NNS taxes))
+                (PP (IN for)
+                  (NP (VBG working) (NNS families))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD expanded)
+        (NP (NN health) (NN care))
+        (PP (IN for)
+          (NP
+            (NP (NNS children))
+            (CC and)
+            (NP (PRP$ their) (NNS parents))))))
+    (. .)))
+
+root(ROOT-0, passed-8)
+det(Senate-5, the-2)
+nn(Senate-5, Illinois-3)
+nn(Senate-5, State-4)
+prep_in(passed-8, Senate-5)
+nsubj(passed-8, he-7)
+det(reform-13, the-9)
+amod(reform-13, first-10)
+amod(reform-13, major-11)
+nn(reform-13, ethics-12)
+dobj(passed-8, reform-13)
+num(years-16, 25-15)
+prep_in(reform-13, years-16)
+nn(taxes-19, cut-18)
+appos(years-16, taxes-19)
+amod(families-22, working-21)
+prep_for(taxes-19, families-22)
+conj_and(passed-8, expanded-25)
+nn(care-27, health-26)
+dobj(expanded-25, care-27)
+prep_for(expanded-25, children-29)
+poss(parents-32, their-31)
+conj_and(children-29, parents-32)
+
+Sentence #12 (37 tokens):
+As a United States Senator, he reached across the aisle to pass groundbreaking lobbying reform, lock up the world's most dangerous weapons, and bring transparency to government by putting federal spending online.
+[Text=As CharacterOffsetBegin=1762 CharacterOffsetEnd=1764 PartOfSpeech=IN Lemma=as NamedEntityTag=O] [Text=a CharacterOffsetBegin=1765 CharacterOffsetEnd=1766 PartOfSpeech=DT Lemma=a NamedEntityTag=O] [Text=United CharacterOffsetBegin=1767 CharacterOffsetEnd=1773 PartOfSpeech=NNP Lemma=United NamedEntityTag=LOCATION] [Text=States CharacterOffsetBegin=1774 CharacterOffsetEnd=1780 PartOfSpeech=NNPS Lemma=States NamedEntityTag=LOCATION] [Text=Senator CharacterOffsetBegin=1781 CharacterOffsetEnd=1788 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=O] [Text=, CharacterOffsetBegin=1788 CharacterOffsetEnd=1789 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=he CharacterOffsetBegin=1790 CharacterOffsetEnd=1792 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=reached CharacterOffsetBegin=1793 CharacterOffsetEnd=1800 PartOfSpeech=VBD Lemma=reach NamedEntityTag=O] [Text=across CharacterOffsetBegin=1801 CharacterOffsetEnd=1807 PartOfSpeech=IN Lemma=across NamedEntityTag=O] [Text=the CharacterOffsetBegin=1808 CharacterOffsetEnd=1811 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=aisle CharacterOffsetBegin=1812 CharacterOffsetEnd=1817 PartOfSpeech=NN Lemma=aisle NamedEntityTag=O] [Text=to CharacterOffsetBegin=1818 CharacterOffsetEnd=1820 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=pass CharacterOffsetBegin=1821 CharacterOffsetEnd=1825 PartOfSpeech=VB Lemma=pass NamedEntityTag=O] [Text=groundbreaking CharacterOffsetBegin=1826 CharacterOffsetEnd=1840 PartOfSpeech=VBG Lemma=groundbreak NamedEntityTag=O] [Text=lobbying CharacterOffsetBegin=1841 CharacterOffsetEnd=1849 PartOfSpeech=NN Lemma=lobbying NamedEntityTag=O] [Text=reform CharacterOffsetBegin=1850 CharacterOffsetEnd=1856 PartOfSpeech=NN Lemma=reform NamedEntityTag=O] [Text=, CharacterOffsetBegin=1856 CharacterOffsetEnd=1857 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=lock CharacterOffsetBegin=1858 CharacterOffsetEnd=1862 PartOfSpeech=VB Lemma=lock NamedEntityTag=O] [Text=up CharacterOffsetBegin=1863 CharacterOffsetEnd=1865 PartOfSpeech=RP Lemma=up NamedEntityTag=O] [Text=the CharacterOffsetBegin=1866 CharacterOffsetEnd=1869 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=world CharacterOffsetBegin=1870 CharacterOffsetEnd=1875 PartOfSpeech=NN Lemma=world NamedEntityTag=O] [Text='s CharacterOffsetBegin=1875 CharacterOffsetEnd=1877 PartOfSpeech=POS Lemma='s NamedEntityTag=O] [Text=most CharacterOffsetBegin=1878 CharacterOffsetEnd=1882 PartOfSpeech=RBS Lemma=most NamedEntityTag=O] [Text=dangerous CharacterOffsetBegin=1883 CharacterOffsetEnd=1892 PartOfSpeech=JJ Lemma=dangerous NamedEntityTag=O] [Text=weapons CharacterOffsetBegin=1893 CharacterOffsetEnd=1900 PartOfSpeech=NNS Lemma=weapon NamedEntityTag=O] [Text=, CharacterOffsetBegin=1900 CharacterOffsetEnd=1901 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=1902 CharacterOffsetEnd=1905 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=bring CharacterOffsetBegin=1906 CharacterOffsetEnd=1911 PartOfSpeech=VB Lemma=bring NamedEntityTag=O] [Text=transparency CharacterOffsetBegin=1912 CharacterOffsetEnd=1924 PartOfSpeech=NN Lemma=transparency NamedEntityTag=O] [Text=to CharacterOffsetBegin=1925 CharacterOffsetEnd=1927 PartOfSpeech=TO Lemma=to NamedEntityTag=O] [Text=government CharacterOffsetBegin=1928 CharacterOffsetEnd=1938 PartOfSpeech=NN Lemma=government NamedEntityTag=O] [Text=by CharacterOffsetBegin=1939 CharacterOffsetEnd=1941 PartOfSpeech=IN Lemma=by NamedEntityTag=O] [Text=putting CharacterOffsetBegin=1942 CharacterOffsetEnd=1949 PartOfSpeech=VBG Lemma=put NamedEntityTag=O] [Text=federal CharacterOffsetBegin=1950 CharacterOffsetEnd=1957 PartOfSpeech=JJ Lemma=federal NamedEntityTag=O] [Text=spending CharacterOffsetBegin=1958 CharacterOffsetEnd=1966 PartOfSpeech=NN Lemma=spending NamedEntityTag=O] [Text=online CharacterOffsetBegin=1967 CharacterOffsetEnd=1973 PartOfSpeech=NN Lemma=online NamedEntityTag=O] [Text=. CharacterOffsetBegin=1973 CharacterOffsetEnd=1974 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NNP United) (NNPS States) (NNP Senator)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD reached)
+      (PP (IN across)
+        (NP (DT the) (NN aisle)))
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB pass)
+              (NP (VBG groundbreaking) (NN lobbying) (NN reform)))
+            (, ,)
+            (VP (VB lock)
+              (PP (RP up)
+                (NP
+                  (NP (DT the) (NN world) (POS 's))
+                  (ADJP (RBS most) (JJ dangerous))
+                  (NNS weapons))))
+            (, ,)
+            (CC and)
+            (VP (VB bring)
+              (NP (NN transparency))
+              (PP (TO to)
+                (NP (NN government)))
+              (PP (IN by)
+                (S
+                  (VP (VBG putting)
+                    (NP (JJ federal) (NN spending))
+                    (PP (NN online))))))))))
+    (. .)))
+
+root(ROOT-0, reached-8)
+det(Senator-5, a-2)
+nn(Senator-5, United-3)
+nn(Senator-5, States-4)
+prep_as(reached-8, Senator-5)
+nsubj(reached-8, he-7)
+det(aisle-11, the-10)
+prep_across(reached-8, aisle-11)
+aux(pass-13, to-12)
+xcomp(reached-8, pass-13)
+amod(reform-16, groundbreaking-14)
+nn(reform-16, lobbying-15)
+dobj(pass-13, reform-16)
+conj_and(pass-13, lock-18)
+prep(lock-18, up-19)
+det(world-21, the-20)
+poss(weapons-25, world-21)
+advmod(dangerous-24, most-23)
+amod(weapons-25, dangerous-24)
+dep(up-19, weapons-25)
+conj_and(pass-13, bring-28)
+dobj(bring-28, transparency-29)
+prep_to(bring-28, government-31)
+prepc_by(bring-28, putting-33)
+amod(spending-35, federal-34)
+dobj(putting-33, spending-35)
+prep(putting-33, online-36)
+
+Sentence #13 (25 tokens):
+He was elected the 44th President of the United States on November 4, 2008, and sworn in on January 20, 2009.
+[Text=He CharacterOffsetBegin=1978 CharacterOffsetEnd=1980 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=was CharacterOffsetBegin=1981 CharacterOffsetEnd=1984 PartOfSpeech=VBD Lemma=be NamedEntityTag=O] [Text=elected CharacterOffsetBegin=1985 CharacterOffsetEnd=1992 PartOfSpeech=VBN Lemma=elect NamedEntityTag=O] [Text=the CharacterOffsetBegin=1993 CharacterOffsetEnd=1996 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=44th CharacterOffsetBegin=1997 CharacterOffsetEnd=2001 PartOfSpeech=JJ Lemma=44th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=44.0] [Text=President CharacterOffsetBegin=2002 CharacterOffsetEnd=2011 PartOfSpeech=NN Lemma=president NamedEntityTag=O] [Text=of CharacterOffsetBegin=2012 CharacterOffsetEnd=2014 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=the CharacterOffsetBegin=2015 CharacterOffsetEnd=2018 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=United CharacterOffsetBegin=2019 CharacterOffsetEnd=2025 PartOfSpeech=NNP Lemma=United NamedEntityTag=LOCATION] [Text=States CharacterOffsetBegin=2026 CharacterOffsetEnd=2032 PartOfSpeech=NNPS Lemma=States NamedEntityTag=LOCATION] [Text=on CharacterOffsetBegin=2033 CharacterOffsetEnd=2035 PartOfSpeech=IN Lemma=on NamedEntityTag=O] [Text=November CharacterOffsetBegin=2036 CharacterOffsetEnd=2044 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=2008-11-04 Timex=<TIMEX3 tid="t4" type="DATE" value="2008-11-04">November 4, 2008</TIMEX3>] [Text=4 CharacterOffsetBegin=2045 CharacterOffsetEnd=2046 PartOfSpeech=CD Lemma=4 NamedEntityTag=DATE NormalizedNamedEntityTag=2008-11-04 Timex=<TIMEX3 tid="t4" type="DATE" value="2008-11-04">November 4, 2008</TIMEX3>] [Text=, CharacterOffsetBegin=2046 CharacterOffsetEnd=2047 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=2008-11-04 Timex=<TIMEX3 tid="t4" type="DATE" value="2008-11-04">November 4, 2008</TIMEX3>] [Text=2008 CharacterOffsetBegin=2048 CharacterOffsetEnd=2052 PartOfSpeech=CD Lemma=2008 NamedEntityTag=DATE NormalizedNamedEntityTag=2008-11-04 Timex=<TIMEX3 tid="t4" type="DATE" value="2008-11-04">November 4, 2008</TIMEX3>] [Text=, CharacterOffsetBegin=2052 CharacterOffsetEnd=2053 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=and CharacterOffsetBegin=2054 CharacterOffsetEnd=2057 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=sworn CharacterOffsetBegin=2058 CharacterOffsetEnd=2063 PartOfSpeech=VBN Lemma=swear NamedEntityTag=O] [Text=in CharacterOffsetBegin=2064 CharacterOffsetEnd=2066 PartOfSpeech=IN Lemma=in NamedEntityTag=O] [Text=on CharacterOffsetBegin=2067 CharacterOffsetEnd=2069 PartOfSpeech=IN Lemma=on NamedEntityTag=O] [Text=January CharacterOffsetBegin=2070 CharacterOffsetEnd=2077 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=2009-01-20 Timex=<TIMEX3 tid="t5" type="DATE" value="2009-01-20">January 20, 2009</TIMEX3>] [Text=20 CharacterOffsetBegin=2078 CharacterOffsetEnd=2080 PartOfSpeech=CD Lemma=20 NamedEntityTag=DATE NormalizedNamedEntityTag=2009-01-20 Timex=<TIMEX3 tid="t5" type="DATE" value="2009-01-20">January 20, 2009</TIMEX3>] [Text=, CharacterOffsetBegin=2080 CharacterOffsetEnd=2081 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=2009-01-20 Timex=<TIMEX3 tid="t5" type="DATE" value="2009-01-20">January 20, 2009</TIMEX3>] [Text=2009 CharacterOffsetBegin=2082 CharacterOffsetEnd=2086 PartOfSpeech=CD Lemma=2009 NamedEntityTag=DATE NormalizedNamedEntityTag=2009-01-20 Timex=<TIMEX3 tid="t5" type="DATE" value="2009-01-20">January 20, 2009</TIMEX3>] [Text=. CharacterOffsetBegin=2086 CharacterOffsetEnd=2087 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP
+        (VP (VBN elected)
+          (NP
+            (NP (DT the) (JJ 44th) (NN President))
+            (PP (IN of)
+              (NP (DT the) (NNP United) (NNPS States))))
+          (PP (IN on)
+            (NP (NNP November) (CD 4) (, ,) (CD 2008) (, ,))))
+        (CC and)
+        (VP (VBN sworn)
+          (PP (IN in)
+            (PP (IN on)
+              (NP (NNP January) (CD 20) (, ,) (CD 2009)))))))
+    (. .)))
+
+root(ROOT-0, elected-3)
+nsubjpass(elected-3, He-1)
+auxpass(elected-3, was-2)
+det(President-6, the-4)
+amod(President-6, 44th-5)
+dobj(elected-3, President-6)
+det(States-10, the-8)
+nn(States-10, United-9)
+prep_of(President-6, States-10)
+prep_on(elected-3, November-12)
+num(November-12, 4-13)
+num(November-12, 2008-15)
+conj_and(elected-3, sworn-18)
+prep(sworn-18, in-19)
+pcomp(in-19, on-20)
+pobj(on-20, January-21)
+num(January-21, 20-22)
+num(January-21, 2009-24)
+
+Sentence #14 (19 tokens):
+He and his wife, Michelle, are the proud parents of two daughters, Malia and Sasha.
+[Text=He CharacterOffsetBegin=2088 CharacterOffsetEnd=2090 PartOfSpeech=PRP Lemma=he NamedEntityTag=O] [Text=and CharacterOffsetBegin=2091 CharacterOffsetEnd=2094 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=his CharacterOffsetBegin=2095 CharacterOffsetEnd=2098 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O] [Text=wife CharacterOffsetBegin=2099 CharacterOffsetEnd=2103 PartOfSpeech=NN Lemma=wife NamedEntityTag=O] [Text=, CharacterOffsetBegin=2103 CharacterOffsetEnd=2104 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=Michelle CharacterOffsetBegin=2105 CharacterOffsetEnd=2113 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON] [Text=, CharacterOffsetBegin=2113 CharacterOffsetEnd=2114 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=are CharacterOffsetBegin=2115 CharacterOffsetEnd=2118 PartOfSpeech=VBP Lemma=be NamedEntityTag=O] [Text=the CharacterOffsetBegin=2119 CharacterOffsetEnd=2122 PartOfSpeech=DT Lemma=the NamedEntityTag=O] [Text=proud CharacterOffsetBegin=2123 CharacterOffsetEnd=2128 PartOfSpeech=JJ Lemma=proud NamedEntityTag=O] [Text=parents CharacterOffsetBegin=2129 CharacterOffsetEnd=2136 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O] [Text=of CharacterOffsetBegin=2137 CharacterOffsetEnd=2139 PartOfSpeech=IN Lemma=of NamedEntityTag=O] [Text=two CharacterOffsetBegin=2140 CharacterOffsetEnd=2143 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0] [Text=daughters CharacterOffsetBegin=2144 CharacterOffsetEnd=2153 PartOfSpeech=NNS Lemma=daughter NamedEntityTag=O] [Text=, CharacterOffsetBegin=2153 CharacterOffsetEnd=2154 PartOfSpeech=, Lemma=, NamedEntityTag=O] [Text=Malia CharacterOffsetBegin=2155 CharacterOffsetEnd=2160 PartOfSpeech=NNP Lemma=Malia NamedEntityTag=PERSON] [Text=and CharacterOffsetBegin=2161 CharacterOffsetEnd=2164 PartOfSpeech=CC Lemma=and NamedEntityTag=O] [Text=Sasha CharacterOffsetBegin=2165 CharacterOffsetEnd=2170 PartOfSpeech=NNP Lemma=Sasha NamedEntityTag=PERSON] [Text=. CharacterOffsetBegin=2170 CharacterOffsetEnd=2171 PartOfSpeech=. Lemma=. NamedEntityTag=O] 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (PRP He))
+        (CC and)
+        (NP (PRP$ his) (NN wife)))
+      (, ,)
+      (NP (NNP Michelle))
+      (, ,))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (JJ proud) (NNS parents))
+        (PP (IN of)
+          (NP
+            (NP (CD two) (NNS daughters))
+            (, ,)
+            (NP (NNP Malia))
+            (CC and)
+            (NP (NNP Sasha))))))
+    (. .)))
+
+root(ROOT-0, parents-11)
+nsubj(parents-11, He-1)
+poss(wife-4, his-3)
+conj_and(He-1, wife-4)
+appos(He-1, Michelle-6)
+cop(parents-11, are-8)
+det(parents-11, the-9)
+amod(parents-11, proud-10)
+num(daughters-14, two-13)
+prep_of(parents-11, daughters-14)
+conj_and(daughters-14, Malia-16)
+conj_and(daughters-14, Sasha-18)
+
+Coreference set:
+	(3,6,[6,7]) -> (1,8,[8,9]), that is: "44th" -> "44th"
+	(13,5,[5,6]) -> (1,8,[8,9]), that is: "44th" -> "44th"
+Coreference set:
+	(1,9,[7,14]) -> (1,5,[1,6]), that is: "the 44th President of the United States" -> "President Barack Obama Barack Obama"
+	(2,1,[1,2]) -> (1,5,[1,6]), that is: "His" -> "President Barack Obama Barack Obama"
+	(3,7,[5,12]) -> (1,5,[1,6]), that is: "the 44th President of the United States" -> "President Barack Obama Barack Obama"
+	(5,13,[12,14]) -> (1,5,[1,6]), that is: "President Obama" -> "President Barack Obama Barack Obama"
+	(7,17,[16,18]) -> (1,5,[1,6]), that is: "President Obama" -> "President Barack Obama Barack Obama"
+	(10,2,[1,4]) -> (1,5,[1,6]), that is: "President Obama 's" -> "President Barack Obama Barack Obama"
+	(10,11,[11,12]) -> (1,5,[1,6]), that is: "his" -> "President Barack Obama Barack Obama"
+	(11,7,[7,8]) -> (1,5,[1,6]), that is: "he" -> "President Barack Obama Barack Obama"
+	(13,6,[4,11]) -> (1,5,[1,6]), that is: "the 44th President of the United States" -> "President Barack Obama Barack Obama"
+Coreference set:
+	(3,11,[9,12]) -> (1,13,[11,14]), that is: "the United States" -> "the United States"
+	(12,4,[3,5]) -> (1,13,[11,14]), that is: "United States" -> "the United States"
+	(13,10,[8,11]) -> (1,13,[11,14]), that is: "the United States" -> "the United States"
+Coreference set:
+	(2,2,[1,3]) -> (2,6,[4,31]), that is: "His story" -> "the American story -- values from the heartland , a middle-class upbringing in a strong family , hard work and education as the means of getting ahead"
+	(4,2,[1,3]) -> (2,6,[4,31]), that is: "His story" -> "the American story -- values from the heartland , a middle-class upbringing in a strong family , hard work and education as the means of getting ahead"
+Coreference set:
+	(2,11,[10,12]) -> (4,10,[9,19]), that is: "the heartland" -> "the heartland , a middle-class upbringing in a strong family"
+	(4,10,[9,11]) -> (4,10,[9,19]), that is: "the heartland" -> "the heartland , a middle-class upbringing in a strong family"
+Coreference set:
+	(4,14,[12,19]) -> (2,15,[13,20]), that is: "a middle-class upbringing in a strong family" -> "a middle-class upbringing in a strong family"
+Coreference set:
+	(4,18,[16,19]) -> (2,19,[17,20]), that is: "a strong family" -> "a strong family"
+Coreference set:
+	(4,26,[25,27]) -> (2,27,[26,28]), that is: "the means" -> "the means"
+Coreference set:
+	(4,33,[32,39]) -> (2,34,[33,40]), that is: "the conviction that a life so blessed" -> "the conviction that a life so blessed"
+Coreference set:
+	(4,36,[35,37]) -> (2,37,[36,38]), that is: "a life" -> "a life"
+Coreference set:
+	(4,1,[1,2]) -> (3,3,[1,4]), that is: "His" -> "Barack H. Obama"
+Coreference set:
+	(6,1,[1,2]) -> (5,3,[2,6]), that is: "He" -> "a father from Kenya"
+	(6,7,[7,8]) -> (5,3,[2,6]), that is: "his" -> "a father from Kenya"
+	(6,18,[18,19]) -> (5,3,[2,6]), that is: "his" -> "a father from Kenya"
+	(7,3,[3,4]) -> (5,3,[2,6]), that is: "his" -> "a father from Kenya"
+	(7,23,[23,24]) -> (5,3,[2,6]), that is: "he" -> "a father from Kenya"
+	(8,1,[1,2]) -> (5,3,[2,6]), that is: "He" -> "a father from Kenya"
+	(8,10,[10,11]) -> (5,3,[2,6]), that is: "he" -> "a father from Kenya"
+	(9,4,[4,5]) -> (5,3,[2,6]), that is: "he" -> "a father from Kenya"
+	(9,29,[29,30]) -> (5,3,[2,6]), that is: "his" -> "a father from Kenya"
+Coreference set:
+	(6,23,[23,24]) -> (6,19,[18,20]), that is: "her" -> "his grandmother"
+Coreference set:
+	(7,4,[3,5]) -> (6,24,[23,25]), that is: "his way" -> "her way"
+Coreference set:
+	(9,7,[7,8]) -> (7,20,[20,21]), that is: "Chicago" -> "Chicago"
+Coreference set:
+	(11,10,[10,11]) -> (8,13,[13,14]), that is: "first" -> "first"
+Coreference set:
+	(11,31,[31,32]) -> (11,22,[21,23]), that is: "their" -> "working families"
+Coreference set:
+	(12,7,[7,8]) -> (12,5,[2,6]), that is: "he" -> "a United States Senator"
+	(13,1,[1,2]) -> (12,5,[2,6]), that is: "He" -> "a United States Senator"
+	(14,1,[1,2]) -> (12,5,[2,6]), that is: "He" -> "a United States Senator"
+	(14,3,[3,4]) -> (12,5,[2,6]), that is: "his" -> "a United States Senator"
+Coreference set:
+	(14,11,[9,19]) -> (14,1,[1,5]), that is: "the proud parents of two daughters , Malia and Sasha" -> "He and his wife"
