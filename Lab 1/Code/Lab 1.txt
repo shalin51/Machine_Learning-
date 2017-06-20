@@ -1,6 +1,6 @@
 
-# Library import for all email methods
-import smtplib
+
+
 
 print ("This is my first python Project")
 print ("-"*40)
@@ -11,10 +11,10 @@ print("_"*40)
 # email module import
 from email.mime.text import MIMEText
 
-# Open a plain text file for reading.  For this example, assume that
-# the text file contains only ASCII characters.
+
 fileToRead = open("Documents//message.txt", 'rb')
-# Creating a message form file
+
+
 messageToBeSend = MIMEText(fileToRead.read())
 fileToRead.close()
 
@@ -34,30 +34,6 @@ print("Email Sent Sucessfully");
  * Created by shalin on 6/10/2017.
  */
 
-import edu.stanford.nlp.dcoref.CorefChain;
-import edu.stanford.nlp.dcoref.CorefCoreAnnotations;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.*;
-import edu.stanford.nlp.semgraph.SemanticGraph;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeCoreAnnotations;
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.StringUtils;
-import org.jetbrains.annotations.NotNull;
-import scala.util.control.Exception;
-import sun.plugin2.gluegen.runtime.StructAccessor;
-
-import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
