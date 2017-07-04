@@ -127,7 +127,7 @@ object SparkTutorials {
       )
     }
     //println( "Rephrase the question please")
-    println("their class celebrates 30th reunion")
+    println("They were in labor together on Aug. 4, 1961.")
 
   }
 }
