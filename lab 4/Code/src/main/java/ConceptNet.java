@@ -38,8 +38,8 @@ public class ConceptNet {
 
                 inputStream.close();
             }
-            JSONParser parser = new JSONParser();
-            Object obj = parser.parse(line);
+            JSONParser jParser = new JSONParser();
+            Object obj = jParser.parse(line);
             JSONObject b = (JSONObject) obj;
             JSONArray ja = (JSONArray) b.get("edges");
             for (int i = 0; i < ja.size(); i++) {
