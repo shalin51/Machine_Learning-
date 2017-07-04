@@ -31,16 +31,16 @@ object SparkTutorials {
     val NERFile = "data\\NERFile.txt"
 
 
-    val fileData = ReadWriteOperation.ReadFile("data\\inputDocuments.txt", StandardCharsets.UTF_8)
+    //val fileData = ReadWriteOperation.ReadFile("data\\inputDocuments.txt", StandardCharsets.UTF_8)
 
     //val nlpDataList = List[NLPData]()
 
     val nlpOper = new NLPOperations()
     val nlpObj = nlpOper.GetNLPObject()
-    val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
+    //val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
     var sentenceNumber: Int = 0
 
-     val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
+    /* val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
       sentence => {
         sentenceNumber=sentenceNumber+1
         (sentence, nlpOper.GetToken(sentence), nlpOper.GetLemmas(sentence, sentenceNumber.toString), nlpOper.GetPOS(sentence,sentenceNumber.toString),
@@ -107,7 +107,28 @@ object SparkTutorials {
           println("Sorry!!! not able to find answer....")
         }
       }
+    }*/
+
+    val inputQuestion = StdIn.readLine()
+    val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
+
+
+    if (questionTriplet.toString.equals("Rephrase the question please.")) {
+      println(questionTriplet)
     }
+    else {
+      val brokenQuestion = QuestionAns.FormatQuestion(inputQuestion)
+      val questionType = brokenQuestion(0)
+      val formattedQuestion = brokenQuestion(1)
+
+      val annotatedQuestionData = nlpOper.AnnotateData(formattedQuestion, nlpObj)
+      val lemmatisedQuestionSentance = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedQuestionData)).collect().map(
+        sentance => (nlpOper.GetLemmas(sentance))
+      )
+    }
+    //println( "Rephrase the question please")
+    println("their class celebrates 30th reunion")
+
   }
 }
 
