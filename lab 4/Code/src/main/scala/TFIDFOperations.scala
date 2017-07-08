@@ -14,7 +14,7 @@ object TF_IDF {
   def FindSynonyms(word: String, sparkContectObj: SparkContext): Array[(String,Double)] = {
 
     //Reading the processed Text File to find synonyms
-    val processedFile = sparkContectObj.textFile("data/processedFile.txt")
+    val processedFile = sparkContectObj.textFile("data/SentencesFile.txt")
 
     val wordSeq = processedFile.map(line => {
       val wordStrings = line.split(" ")

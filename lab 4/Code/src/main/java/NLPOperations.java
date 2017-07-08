@@ -138,6 +138,30 @@ public class NLPOperations {
         return NERList;
     }
 
+    public Map<String,String> GetNERR(CoreMap sentence) {
+        Map<String,String> NERList = new HashMap<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            NERList.put(tokenString,token.get(CoreAnnotations.NamedEntityTagAnnotation.class));
+        }
+
+        return NERList;
+    }
+
+    public Map<String,List<String>> GetNER(CoreMap sentence) {
+        Map<String,List<String>> NERList = new HashMap<>();
+        List<String> tokenList=new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            tokenList.add(tokenString);
+            tokenList.add(token.get(CoreAnnotations.NamedEntityTagAnnotation.class));
+            NERList.put(tokenNumber,tokenList);
+        }
+
+        return NERList;
+    }
     public Set<Tree> GetTree(List<CoreMap> sentences) {
         Set<Tree> treeList = new HashSet<>();
         for (CoreMap sentence : sentences) {

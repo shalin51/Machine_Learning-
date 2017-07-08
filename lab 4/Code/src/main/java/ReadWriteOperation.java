@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,6 +21,13 @@ public class ReadWriteOperation {
     static void WriteToFile(String lst, String path)
     {
         try{
+
+            File file = new File(path);
+
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
             FileWriter writer= new FileWriter(path,true);
                 writer.write(lst+"\n");
             writer.close();

@@ -1,6 +1,6 @@
 import java.io.File
 import java.nio.charset.StandardCharsets
-
+import util.control.Breaks._
 import scala.collection._
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.mllib.feature.{HashingTF, IDF, Word2Vec, Word2VecModel}
@@ -29,6 +29,7 @@ object SparkTutorials {
     val lemmaFile = "data\\lemmaFile.txt"
     val POSFile = "data\\POSFile.txt"
     val NERFile = "data\\NERFile.txt"
+    val sentencesFile = "C:\\Users\\shali\\OneDrive\\KDM\\Machine_Learning-\\lab 4\\Code\\data\\SentencesFile.txt"
 
 
     //val fileData = ReadWriteOperation.ReadFile("data\\inputDocuments.txt", StandardCharsets.UTF_8)
@@ -37,29 +38,68 @@ object SparkTutorials {
 
     val nlpOper = new NLPOperations()
     val nlpObj = nlpOper.GetNLPObject()
-    //val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
+   // val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
     var sentenceNumber: Int = 0
+    //val stopwords = sContext.textFile("data/stopwords.txt").collect()
+
 
     /* val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
       sentence => {
-        sentenceNumber=sentenceNumber+1
-        (sentence, nlpOper.GetToken(sentence), nlpOper.GetLemmas(sentence, sentenceNumber.toString), nlpOper.GetPOS(sentence,sentenceNumber.toString),
-          nlpOper.GetNER(sentence,sentenceNumber.toString))}
-    ).foreach(a => {
-                    ReadWriteOperation.WriteToFile(a._3.toString(), lemmaFile)
-                    ReadWriteOperation.WriteToFile(a._4.toString(), POSFile)
-                    ReadWriteOperation.WriteToFile(a._5.toString(), NERFile)
-        }
-    )
+        sentenceNumber = sentenceNumber + 1
+        var isStopWord=false
+        val brokenSentence = sentence.toString.split(" ")
+        var listOfWords = new ListBuffer[String]
+        brokenSentence.map(word => {
+         breakable( stopwords.foreach(wr =>
+            if (word.toLowerCase == wr) {
+              isStopWord=true
+              break
+            }))
 
+          if(!isStopWord)
+              {
+                listOfWords+=word
+              }
+          isStopWord=false
+        })
+          (listOfWords.mkString(" "), nlpOper.GetToken(sentence), nlpOper.GetLemmas(sentence, sentenceNumber.toString), nlpOper.GetPOS(sentence, sentenceNumber.toString),
+            nlpOper.GetNER(sentence, sentenceNumber.toString))
+        }).foreach(a => {
+          ReadWriteOperation.WriteToFile(a._1.toString(), sentencesFile)
+          ReadWriteOperation.WriteToFile(a._3.toString(), lemmaFile)
+          ReadWriteOperation.WriteToFile(a._4.toString(), POSFile)
+          ReadWriteOperation.WriteToFile(a._5.toString(), NERFile)
+        })
+*/
 
-    LDA.CallLDA(sContext, args)
-
+//Question Asking part main
+    //LDA.CallLDA(sContext, args)
+   /* println("Question Please..")
     val inputQuestion = StdIn.readLine()
     val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
 
+    val brokenQuestion = QuestionAns.FormatQuestion(inputQuestion)
+    val questionType = brokenQuestion(0)
+    val formattedQuestion = brokenQuestion(1)
 
-    if (questionTriplet.toString.equals("Rephrase the question please.")) {
+    val annotatedQuestionData = nlpOper.AnnotateData(formattedQuestion, nlpObj)
+    val lemmatisedQuestionSentance = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedQuestionData)).collect().map(
+      sentance => (nlpOper.GetLemmas(sentance))
+    )
+
+    val lemmatisedQuestion = new ListBuffer[String]()
+    lemmatisedQuestionSentance(0).foreach(a => lemmatisedQuestion += a)
+    val ans = QuestionAns.FindOutAnswer(lemmatisedQuestion, questionType)
+
+    println(ans)
+*/
+
+
+
+
+
+
+    /* if (questionTriplet.toString.equals("Rephrase the question please.")) {
       println(questionTriplet)
     }
     else {
@@ -71,8 +111,8 @@ object SparkTutorials {
       val lemmatisedQuestionSentance = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedQuestionData)).collect().map(
         sentance => (nlpOper.GetLemmas(sentance))
       )
-
-      val lemmatisedQuestion = new ListBuffer[String]()
+*/
+    /* val lemmatisedQuestion = new ListBuffer[String]()
       lemmatisedQuestionSentance(0).foreach(a => lemmatisedQuestion += a)
 
       val ans = QuestionAns.FindOutAnswer(lemmatisedQuestion, questionType)
@@ -106,30 +146,10 @@ object SparkTutorials {
         else {
           println("Sorry!!! not able to find answer....")
         }
-      }
-    }*/
-
-    val inputQuestion = StdIn.readLine()
-    val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
-
-
-    if (questionTriplet.toString.equals("Rephrase the question please.")) {
-      println(questionTriplet)
-    }
-    else {
-      val brokenQuestion = QuestionAns.FormatQuestion(inputQuestion)
-      val questionType = brokenQuestion(0)
-      val formattedQuestion = brokenQuestion(1)
-
-      val annotatedQuestionData = nlpOper.AnnotateData(formattedQuestion, nlpObj)
-      val lemmatisedQuestionSentance = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedQuestionData)).collect().map(
-        sentance => (nlpOper.GetLemmas(sentance))
-      )
-    }
-    //println( "Rephrase the question please")
-    println("They were in labor together on Aug. 4, 1961.")
-
+     */
   }
+
+
 }
 
 
