@@ -42,6 +42,7 @@ object SparkTutorials {
     var sentenceNumber: Int = 0
     //val stopwords = sContext.textFile("data/stopwords.txt").collect()
 
+    ReadWriteOperation.RemoveEmptyLines();
 
     /* val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
       sentence => {
@@ -94,8 +95,12 @@ object SparkTutorials {
     println(ans)
 */
 
+  val TfIdf=TF_IDF.GetTFIDF("AlltheSentences.txt",sContext)
+TF_IDF.TrainModel(sContext,TfIdf)
 
 
+
+    //ReadWriteOperation.ReadAllFileFromFolder("E:\\Knowledge Discovery Management\\Datasets\\WikiRef_dataset\\WikiRef_dataset\\WikiRef150","data/WholeDataSet.txt")
 
 
 
