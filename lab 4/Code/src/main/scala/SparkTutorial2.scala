@@ -38,13 +38,13 @@ object SparkTutorials {
 
     val nlpOper = new NLPOperations()
     val nlpObj = nlpOper.GetNLPObject()
-   // val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
+   val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
     var sentenceNumber: Int = 0
-    //val stopwords = sContext.textFile("data/stopwords.txt").collect()
+    val stopwords = sContext.textFile("data/stopwords.txt").collect()
 
     ReadWriteOperation.RemoveEmptyLines();
 
-    /* val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
+    val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
       sentence => {
         sentenceNumber = sentenceNumber + 1
         var isStopWord=false
@@ -71,11 +71,22 @@ object SparkTutorials {
           ReadWriteOperation.WriteToFile(a._4.toString(), POSFile)
           ReadWriteOperation.WriteToFile(a._5.toString(), NERFile)
         })
-*/
 
-//Question Asking part main
+    //Clustering Using LDA and KMeans
     //LDA.CallLDA(sContext, args)
-   /* println("Question Please..")
+    //KMeansOperation.MakeCluster(sContext,args)
+
+
+
+    //TFIDF Operations
+    /*val TfIdf=TF_IDF.GetTFIDF("data/AlltheSentences.txt",sContext)
+  TF_IDF.TrainModel(sContext,TfIdf)
+  TF_IDF.FindSynonyms("President",sContext).foreach(println(_))
+  */
+
+
+  //Question Asking part main
+    println("Question Please..")
     val inputQuestion = StdIn.readLine()
     val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
 
@@ -93,11 +104,15 @@ object SparkTutorials {
     val ans = QuestionAns.FindOutAnswer(lemmatisedQuestion, questionType)
 
     println(ans)
-*/
 
-  val TfIdf=TF_IDF.GetTFIDF("AlltheSentences.txt",sContext)
-TF_IDF.TrainModel(sContext,TfIdf)
 
+  }
+
+
+}
+
+
+    //
 
 
     //ReadWriteOperation.ReadAllFileFromFolder("E:\\Knowledge Discovery Management\\Datasets\\WikiRef_dataset\\WikiRef_dataset\\WikiRef150","data/WholeDataSet.txt")
@@ -152,10 +167,7 @@ TF_IDF.TrainModel(sContext,TfIdf)
           println("Sorry!!! not able to find answer....")
         }
      */
-  }
 
-
-}
 
 
 

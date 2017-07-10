@@ -14,7 +14,7 @@ import scopt.OptionParser
 object LDA {
   private case class Params(
                              input: Seq[String] = Seq.empty,
-                             k: Int = 20,
+                             k: Int = 10,
                              algorithm: String = "em")
 
   def CallLDA(sContext: SparkContext,args: Array[String]): Unit ={
@@ -61,7 +61,7 @@ object LDA {
 
       // Run LDA.
       val lda = new LDA()
-
+       println("in midddle")
       val optimizer = params.algorithm.toLowerCase match {
         case "em" => new EMLDAOptimizer
         // add (1.0 / actualCorpusSize) to MiniBatchFraction be more robust on tiny datasets.
@@ -72,8 +72,8 @@ object LDA {
 
       lda.setOptimizer(optimizer)
         .setK(params.k)
-        .setMaxIterations(50)
-
+        .setMaxIterations(10)
+       println("in midddle")
       val startTime = System.nanoTime()
       val ldaModel = lda.run(corpus)
       val elapsed = (System.nanoTime() - startTime) / 1e9
@@ -88,6 +88,7 @@ object LDA {
         topic_output.println()
       }
 
+       println("in midddle")
       // Print the topics, showing the top-weighted terms for each topic.
       val topicIndices = ldaModel.describeTopics(maxTermsPerTopic = actualVocabSize)
       val topics = topicIndices.map { case (terms, termWeights) =>

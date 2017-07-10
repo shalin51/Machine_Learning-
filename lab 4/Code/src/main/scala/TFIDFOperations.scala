@@ -18,10 +18,12 @@ object TF_IDF {
     //Reading the processed Text File to find synonyms
     val processedFile = sparkContectObj.textFile(filePath)
 
-    val wordSeq = processedFile.map(line => {
+    var wordSeq = processedFile.map(line => {
       val wordStrings = line.split(" ")
-      wordStrings.toSeq
+      val newWordStr=wordStrings++ NGramOperations.getNGramsFromSentance(line,2) ++  NGramOperations.getNGramsFromSentance(line,3)
+      newWordStr.toSeq
     })
+
 
     //HashingTF object creation
     val hashingTF = new HashingTF()
@@ -68,7 +70,7 @@ object TF_IDF {
     //W2Vector
     val modelPath = "data/W2V"
     val modelFolder = new File(modelPath)
-    val word2vec = new Word2Vec().setVectorSize(100000)
+    val word2vec = new Word2Vec().setVectorSize(5000)
     val model = word2vec.fit(rddOfWords)
     /*for ((synonym, cosineSimilarity) <- synonyms) {
       println("synonym :" + s"$synonym $cosineSimilarity")
