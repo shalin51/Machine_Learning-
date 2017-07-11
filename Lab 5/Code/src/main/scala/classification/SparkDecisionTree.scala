@@ -62,13 +62,13 @@ object SparkDecisionTree {
   }
 
   private def run(params: Params) {
-    System.setProperty("hadoop.home.dir", "D:\\Mayanka Lenevo F Drive\\winutils")
+    System.setProperty("hadoop.home.dir", "C:\\winutils")
     val conf = new SparkConf().setAppName(s"KMeansExample with $params").setMaster("local[*]").set("spark.driver.memory", "4g").set("spark.executor.memory", "4g")
     val sc = new SparkContext(conf)
 
     Logger.getRootLogger.setLevel(Level.WARN)
 
-    val topic_output = new PrintStream("data/DT_Results.txt")
+    val topic_output = new PrintStream("data/DT_Results_OIDF.txt")
     // Load documents, and prepare them for KMeans.
     val preprocessStart = System.nanoTime()
     val (inputVector, corpusData, vocabArray) =
@@ -130,8 +130,7 @@ object SparkDecisionTree {
     val stopWordsBroadCast=sc.broadcast(stopWords)
 
     val df = sc.wholeTextFiles(paths.mkString(",")).map(f => {
-      val lemmatised=CoreNLP.returnLemma(f._2)
-      val splitString = lemmatised.split(" ")
+      val splitString = f._2.split(" ")
       (f._1,splitString)
     })
 

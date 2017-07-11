@@ -62,13 +62,13 @@ object SparkRandomForest {
   }
 
   private def run(params: Params) {
-    System.setProperty("hadoop.home.dir", "D:\\Mayanka Lenevo F Drive\\winutils")
+    System.setProperty("hadoop.home.dir", "C:\\winutils")
     val conf = new SparkConf().setAppName(s"RFExample with $params").setMaster("local[*]").set("spark.driver.memory", "4g").set("spark.executor.memory", "4g")
     val sc = new SparkContext(conf)
 
     Logger.getRootLogger.setLevel(Level.WARN)
 
-    val topic_output = new PrintStream("data/RF_Results.txt")
+    val topic_output = new PrintStream("data/RF_Results_OIF.txt")
     // Load documents, and prepare them for RF.
     val preprocessStart = System.nanoTime()
     val (inputVector, corpusData, vocabArray) = preprocess(sc, params.input)

@@ -1,12 +1,12 @@
-name := "Spark_MachineLearning"
+name := "Tutorial2-Spark"
 
 version := "1.0"
 
 scalaVersion := "2.11.8"
 
+// spark 1.6.1 and satndfor Libaries 3.3.0
 
 libraryDependencies ++= Seq(
-
   "org.apache.spark" %% "spark-core" % "1.6.0" % "provided",
   "org.apache.spark" %% "spark-mllib" % "1.6.0",
   "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
