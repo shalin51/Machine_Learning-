@@ -1,0 +1,117 @@
+
+/**
+  * Created by Shalin on 17-07-2017.
+  */
+object OntologyProject{
+  def main(args: Array[String]): Unit = {
+
+  //vaiable for ontology Uri
+    val OntURI="http://www.semanticweb.org/mayanka/ontologies/2017/6/"
+
+	//Owl manager variable creation 
+    val owlManager = OWLManager.createOWLOntologyManager
+    
+	//In order to create objects that represent entities
+    val dataFactory = owlManager.getOWLDataFactory 
+
+    val obamaOnto = owlManager.createOntology(IRI.create(OntURI,"ObamaOntology#"))
+    
+    val prefixManager = new DefaultPrefixManager(null, null, OntURI+"ObamaOntology#")//Prefix for all the entities
+
+
+   
+    val classes=Source.fromFile("data/Classes").getLines() // Declaration Axiom for creating Classes
+
+    classes.foreach(f=>{
+      val ontClass = dataFactory.getOWLClass(f, prefixManager)
+      val declarationAxiomclass= dataFactory.getOWLDeclarationAxiom(ontClass)
+      owlManager.addAxiom(obamaOnto, declarationAxiomclass)
+    })
+
+    
+    val subClasses=Source.fromFile("data/SubClasses").getLines()// Creating SubClassOfAxiom
+
+    subClasses.foreach(line=>{
+      val str=line.split(",")
+      val ontClass=dataFactory.getOWLClass(str(0), prefixManager)
+      val subCls=dataFactory.getOWLClass(str(1), prefixManager)
+      val declarationAxiom = dataFactory.getOWLSubClassOfAxiom(subCls, ontClass)
+      owlManager.addAxiom(obamaOnto, declarationAxiom)
+    })
+
+
+
+
+    
+    val objprop=Source.fromFile("data/ObjectProperties").getLines()//Creating Object Properties for obama ontology
+    objprop.foreach(f=> {val str=f.split(",")
+      val obamaDomain = dataFactory.getOWLClass(str(1), prefixManager)
+      val dataRange = dataFactory.getOWLClass(str(2), prefixManager)
+      val objpropaxiom = dataFactory.getOWLObjectProperty(str(0), prefixManager) //Creating Object property ‘hasGender’
+      val dataRangeAxiom = dataFactory.getOWLObjectPropertyRangeAxiom(objpropaxiom, dataRange)
+      val domainAxiom = dataFactory.getOWLObjectPropertyDomainAxiom(objpropaxiom, obamaDomain)//Adding Axioms for obama ontology
+      owlManager.addAxiom(obamaOnto, dataRangeAxiom)
+      owlManager.addAxiom(obamaOnto, domainAxiom)
+    })
+
+
+    val dataprop=Source.fromFile("data/DataProperties").getLines()
+
+    dataprop.foreach(f=>{val str=f.split(",")
+      val obamaDomain=dataFactory.getOWLClass(str(1),prefixManager)
+      val fullName = dataFactory.getOWLDataProperty(str(0), prefixManager)// Data Properties creation
+      val domainAxiomfullName = dataFactory.getOWLDataPropertyDomainAxiom(fullName, obamaDomain)
+      owlManager.addAxiom(obamaOnto, domainAxiomfullName)//Defining String Datatype
+      if(str(2)=="string") {val stringDatatype = dataFactory.getStringOWLDatatype()
+        val rangeAxiomfullName = dataFactory.getOWLDataPropertyRangeAxiom(fullName, stringDatatype)
+        //Adding this Axiom to Ontology  owlManager.addAxiom(obamaOnto, rangeAxiomfullName)}
+      else if(str(2)=="int")
+        {
+          //Defining Integer Datatype
+          val Datatype = dataFactory.getIntegerOWLDatatype()
+          val rangeAxiomfullName = dataFactory.getOWLDataPropertyRangeAxiom(fullName, Datatype)
+          //Adding this Axiom to Ontology
+          owlManager.addAxiom(obamaOnto, rangeAxiomfullName)
+        }
+    })
+
+
+    //Creating NamedIndividuals using ClassAssertionAxiom
+    val individuals=Source.fromFile("data/Individuals").getLines()
+
+    individuals.foreach(line=>{
+      val str=line.split(",")
+      val cls=dataFactory.getOWLClass(str(0), prefixManager)
+      val ind = dataFactory.getOWLNamedIndividual(str(1), prefixManager)
+      val classAssertion = dataFactory.getOWLClassAssertionAxiom(cls, ind)
+      owlManager.addAxiom(obamaOnto, classAssertion)
+    })
+    val triplets=Source.fromFile("data/Triplets").getLines()
+    triplets.foreach(f=>{val str=f.split(",")
+      val sub = dataFactory.getOWLNamedIndividual(str(0), prefixManager)
+
+      
+      if(str(3)=="Data")
+        {
+          val pred=dataFactory.getOWLDataProperty(str(1),prefixManager)
+          val dat=dataFactory.getOWLLiteral(str(2))
+          val datAsser = dataFactory.getOWLDataPropertyAssertionAxiom(pred,sub, dat)
+          owlManager.addAxiom(obamaOnto, datAsser)
+        }
+      if(str(3)=="Obj")
+      {
+        val pred=dataFactory.getOWLObjectProperty(str(1),prefixManager)
+        val obj=dataFactory.getOWLNamedIndividual(str(2), prefixManager)
+        val objAsser = dataFactory.getOWLObjectPropertyAssertionAxiom(pred,sub, obj)
+        owlManager.addAxiom(obamaOnto, objAsser)
+      }
+    })
+
+    val os = new FileOutputStream("data/obamaOntology.owl")
+    val owlxmlFormat = new OWLXMLDocumentFormat
+    owlManager.saveOntology(obamaOnto, owlxmlFormat, os)
+    System.out.println("obamaOnto Created")
+
+  }
+
+}

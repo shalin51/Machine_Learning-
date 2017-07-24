@@ -32,19 +32,19 @@ object SparkTutorials {
     val sentencesFile = "C:\\Users\\shali\\OneDrive\\KDM\\Machine_Learning-\\lab 4\\Code\\data\\SentencesFile.txt"
 
 
-    //val fileData = ReadWriteOperation.ReadFile("data\\inputDocuments.txt", StandardCharsets.UTF_8)
+    val fileData = ReadWriteOperation.ReadFile("data\\inputDocuments.txt", StandardCharsets.UTF_8)
 
     //val nlpDataList = List[NLPData]()
 
     val nlpOper = new NLPOperations()
     val nlpObj = nlpOper.GetNLPObject()
-   val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
+   /* val annotatedInputData = nlpOper.AnnotateData(fileData, nlpObj)
     var sentenceNumber: Int = 0
     val stopwords = sContext.textFile("data/stopwords.txt").collect()
+*/
+   // ReadWriteOperation.RemoveEmptyLines();
 
-    ReadWriteOperation.RemoveEmptyLines();
-
-    val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
+   /* val annotatedSentaces = sContext.parallelize(nlpOper.GetSentencesFromAnnotatedData(annotatedInputData)).collect().map(
       sentence => {
         sentenceNumber = sentenceNumber + 1
         var isStopWord=false
@@ -71,7 +71,7 @@ object SparkTutorials {
           ReadWriteOperation.WriteToFile(a._4.toString(), POSFile)
           ReadWriteOperation.WriteToFile(a._5.toString(), NERFile)
         })
-
+*/
     //Clustering Using LDA and KMeans
     //LDA.CallLDA(sContext, args)
     //KMeansOperation.MakeCluster(sContext,args)
@@ -88,7 +88,7 @@ object SparkTutorials {
   //Question Asking part main
     println("Question Please..")
     val inputQuestion = StdIn.readLine()
-    val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
+    //val questionTriplet = OpenIEOper.GetTriplet(inputQuestion)
 
     val brokenQuestion = QuestionAns.FormatQuestion(inputQuestion)
     val questionType = brokenQuestion(0)
@@ -103,8 +103,8 @@ object SparkTutorials {
     lemmatisedQuestionSentance(0).foreach(a => lemmatisedQuestion += a)
     val ans = QuestionAns.FindOutAnswer(lemmatisedQuestion, questionType)
 
-    println(ans)
-
+    val finalAnswer=QuestionAns.GetFinalAns(questionType,ans,formattedQuestion)
+    println(finalAnswer)
 
   }
 
